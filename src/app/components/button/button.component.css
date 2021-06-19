@@ -1,0 +1,8 @@
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 10px;
+    width: 50px;
+    /* box-shadow: yellow; */
+}
