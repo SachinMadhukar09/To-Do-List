@@ -2,8 +2,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {Task} from '../../Task'
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
-import { FormControl } from '@angular/forms';
-// import { IAngularMyDpOptions } from 'angular-mydatepicker';
+import { FormGroup , FormControl } from '@angular/forms';
+// import { AngularMyDatePickerModule} from 'angular-mydatepicker';
 
 @Component({
   selector: 'app-add-task',
@@ -12,25 +12,13 @@ import { FormControl } from '@angular/forms';
 })
 export class AddTaskComponent implements OnInit {
   @Output() onAddTask:EventEmitter<Task> =new EventEmitter();
+  // @Output() onSubmit: EventEmitter();
   text!: string;
   day!: string;
   reminder: any;
   description: any;
   showAddTask:boolean | undefined;
   subscription: Subscription;
-
-  // myDatePickerOptions:IAngularMyDpOptions={
-  //   stylesData:{
-  //     styles:`
-  //             .myDpIconLeftArrow,
-  //             .myDpIconRightArrow{
-  //               color:red;
-  //             }
-  //         `
-  //   }
-  // }
-  
-
 
   constructor(private uiService:UiService) {
     this.subscription = this.uiService
@@ -47,20 +35,38 @@ export class AddTaskComponent implements OnInit {
     
     // Using Reactive Form
 
-    //  const newTask = new FormControl{
-    //       text:this.text,
-    //       day:this.day,
-    //       reminder:this.reminder,
-    //       description:this.description,
-    //  };
-  //   this.onAddTask.emit(newTask);
+    //  const newTask = new FormGroup({
+    //   text: new FormControl('text:this.text') ,
+    //   day: new FormControl('text:this.day'),
+    //   description: new FormControl('text:this.description')
 
-  //   this.text='';
-  //   this.day='';
-  //   this.reminder='';
-  //   this.description='';
+    //   onSubmit(): {
+      
+    //   this.onAddTask.emit(newTask);
+
+    //     this.text='';
+    //     this.day='';
+    //     this.reminder='';
+    //   this.description='';
+    //   }
+
+    //  });
+     
+    //  }
+     
+    // const newTask ={
+    //   text:this.text,
+    //   day:this.day,
+    //   reminder:this.reminder,
+    //   description:this.description,
+    // };
+    // this.onAddTask.emit(newTask);
+
+    // this.text='';
+    // this.day='';
+    // this.reminder='';
+    // this.description='';
     
-  // }
 
 // Normal Form
 
@@ -79,5 +85,4 @@ export class AddTaskComponent implements OnInit {
     this.description='';
     
   }
-
 }

@@ -27,6 +27,13 @@
       "reminder": true,
       "description": "Intern Assignment From Nosir.com",
       "id": 6
+    },
+    {
+      "text": "Date Picker",
+      "day": "2021-06-20",
+      "reminder": "",
+      "description": "Not Completed",
+      "id": 7
     }
   ]
 }

@@ -1,6 +1,7 @@
 <form  *ngIf="showAddTask" 
         class="add-form" 
-        (ngSubmit)="onSubmit()">
+        (ngSubmit)="onSubmit()"
+        >
 <div class="form-control">
     <label for="text">Task</label>
     <input type="text" 
@@ -12,20 +13,12 @@
 <div class="form-control">
     <label for="day">Day & Time</label>
     <input 
-        type="text" 
+        type="date" 
         name="day" 
         [(ngModel)]="day"  
         id="day" 
         placeholder="Add Day & Time"/>
 </div>
-
-<!-- Date Picker is not Working
-
- <input angular-mydatepicket name="day" 
-        [(ngModel)]="day"
-        [options]="myOptions"
-        #dp="angular-mydatepicket"/> --> 
-  
 <div 
     class="form-control">
     <label for="description">Description</label>
@@ -39,38 +32,37 @@
 
 <input type="submit" 
         value="Save Task" 
-        class="btn btn-block"/>
+        class="btn btn-block"/> 
 
-
-
-<!-- <!Using Reactive Form --> 
-
+<!-- <!Using Reactive Form --->
 <!-- <label for="text">Task</label>
 <input id="text" type="text" [formControl]="text"> -->
 <!-- 
 <form  *ngIf="showAddTask" 
         class="add-form" 
-        (ngSubmit)="onSubmit()">
+        [formGroup]="newTask"
+        (ngSubmit)="onSubmit()"
+        >
 <div 
     class="form-control">
 <label for="text">Task</label>
-<input id="text" type="text" [formControl]="text" >
+<input id="text" type="text" formControlName="text" >
 </div>
 
 <div 
     class="form-control">
 <label for="day">Day</label>
-<input id="day" type="text" [formControl]="text" >
+<input id="day" type="date" formControlName="day" >
 </div>
 
 <div 
     class="form-control">
 <label for="description">Description</label>
-<input id="description" type="text" [formControl]="text" >
+<input id="description" type="text" formControlName="description" >
 </div>
 
 
 <input type="submit" 
         value="Save Task" 
         class="btn btn-block"/>
--->
+ -->
