@@ -4,14 +4,14 @@
       "id": 3,
       "text": "Complete the assignment",
       "day": "June 15th at 2:30pm",
-      "reminder": false,
+      "reminder": true,
       "description": "Training Assignment"
     },
     {
       "id": 4,
       "text": "Assignment Linkedin",
       "day": "June 18th at 8:00pm",
-      "reminder": false,
+      "reminder": true,
       "description": "Training Assignment"
     },
     {
@@ -20,6 +20,13 @@
       "description": "Intern Assignment",
       "id": 5,
       "reminder": true
+    },
+    {
+      "text": "Submit Web App",
+      "day": "June 21 at 9:00pm",
+      "reminder": true,
+      "description": "Intern Assignment From Nosir.com",
+      "id": 6
     }
   ]
 }

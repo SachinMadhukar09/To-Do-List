@@ -4,6 +4,8 @@ import {HttpClientModule, HttpHeaders} from '@angular/common/http';
 import {FormsModule} from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+// import { IAngularMyDpOptions }
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -41,7 +43,9 @@ const appRoutes : Routes =[
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(appRoutes , {enableTracing: true}),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // AngularMyDatePickerModule
+    
 
   ],
   providers: [],

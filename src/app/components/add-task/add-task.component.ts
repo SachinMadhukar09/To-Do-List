@@ -3,6 +3,7 @@ import {Task} from '../../Task'
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
 import { FormControl } from '@angular/forms';
+// import { IAngularMyDpOptions } from 'angular-mydatepicker';
 
 @Component({
   selector: 'app-add-task',
@@ -17,6 +18,17 @@ export class AddTaskComponent implements OnInit {
   description: any;
   showAddTask:boolean | undefined;
   subscription: Subscription;
+
+  // myDatePickerOptions:IAngularMyDpOptions={
+  //   stylesData:{
+  //     styles:`
+  //             .myDpIconLeftArrow,
+  //             .myDpIconRightArrow{
+  //               color:red;
+  //             }
+  //         `
+  //   }
+  // }
   
 
 
@@ -33,6 +45,25 @@ export class AddTaskComponent implements OnInit {
       return;
     }
     
+    // Using Reactive Form
+
+    //  const newTask = new FormControl{
+    //       text:this.text,
+    //       day:this.day,
+    //       reminder:this.reminder,
+    //       description:this.description,
+    //  };
+  //   this.onAddTask.emit(newTask);
+
+  //   this.text='';
+  //   this.day='';
+  //   this.reminder='';
+  //   this.description='';
+    
+  // }
+
+// Normal Form
+
     const newTask ={
       text:this.text,
       day:this.day,
