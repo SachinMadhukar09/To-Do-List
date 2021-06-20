@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule, HttpHeaders} from '@angular/common/http';
 import {FormsModule} from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,7 +13,8 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { ImgComponent } from './componenets/img/img.component'
 
 const appRoutes : Routes =[
   { path: '', component:TasksComponent},
@@ -30,13 +32,16 @@ const appRoutes : Routes =[
     TaskItemComponent,
     AddTaskComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ImgComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule,FormsModule,
-    RouterModule.forRoot(appRoutes , {enableTracing: true})
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes , {enableTracing: true}),
+    ReactiveFormsModule
 
   ],
   providers: [],

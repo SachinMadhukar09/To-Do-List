@@ -3,7 +3,8 @@
     margin:5px;
     padding: 10px 20px;
     cursor: pointer;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwuLSmm2DxHp9pBfLA_sYKX_reLCBd5Pl8RNw65rIB_HE30Ue8ge8GebRcMRDzpWY-78eHIy8R_hCfQ&usqp=CAU');
+    max-width: 500px;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwuLSmm2DxHp9pBfLA_sYKX_reLCBd5Pl8RNw65rIB_HE30Ue8ge8GebRcMRDzpWY-78eHIy8R_hCfQ&usqp=CAU'); */
     /* display: flex;
     justify-content: space-around; */
     /* flex-basis: 1000px;
@@ -27,7 +28,6 @@
     align-items: center;
     justify-content: space-between; 
  }
- /* .icon{
-     display: flex;
-     justify-content: right;
- } */
+ .icon{
+     
+ }
