@@ -33,5 +33,7 @@ export class TaskItemComponent implements OnInit {
 
   onToggle(task: Task | undefined){
     this.onToggleReminder.emit(task);
+    
+  
   }
 }

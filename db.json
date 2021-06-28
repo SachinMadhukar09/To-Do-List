@@ -22,18 +22,11 @@
       "reminder": true
     },
     {
-      "text": "Submit Web App",
-      "day": "June 21 at 9:00pm",
-      "reminder": true,
-      "description": "Intern Assignment From Nosir.com",
-      "id": 6
-    },
-    {
-      "text": "Date Picker",
-      "day": "2021-06-20",
-      "reminder": "",
-      "description": "Not Completed",
-      "id": 7
+      "text": "Complete Project",
+      "day": "2021-06-27",
+      "description": "Todo App With Angular",
+      "id": 6,
+      "reminder": true
     }
   ]
 }

@@ -20,6 +20,7 @@ export class AddTaskComponent implements OnInit {
   showAddTask:boolean | undefined;
   subscription: Subscription;
 
+
   constructor(private uiService:UiService) {
     this.subscription = this.uiService
     .onToggle()
@@ -28,32 +29,24 @@ export class AddTaskComponent implements OnInit {
 
   ngOnInit(): void { }
   onSubmit(){
-    if(!this.text){
+    if(!this.day){
       alert('Please Add A Task');
       return;
     }
     
     // Using Reactive Form
 
-    //  const newTask = new FormGroup({
+    //  const newTask:any = new FormGroup({
     //   text: new FormControl('text:this.text') ,
     //   day: new FormControl('text:this.day'),
     //   description: new FormControl('text:this.description')
 
-    //   onSubmit(): {
       
-    //   this.onAddTask.emit(newTask);
-
-    //     this.text='';
-    //     this.day='';
-    //     this.reminder='';
-    //   this.description='';
-    //   }
 
     //  });
      
     //  }
-     
+
     // const newTask ={
     //   text:this.text,
     //   day:this.day,
@@ -75,6 +68,7 @@ export class AddTaskComponent implements OnInit {
       day:this.day,
       reminder:this.reminder,
       description:this.description,
+    
     };
 
     this.onAddTask.emit(newTask);
@@ -84,5 +78,9 @@ export class AddTaskComponent implements OnInit {
     this.reminder='';
     this.description='';
     
+  
   }
 }
+
+    
+

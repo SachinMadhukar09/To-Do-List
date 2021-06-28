@@ -1,0 +1,23 @@
+.r {
+    display: inline-block;
+    background: rgb(30, 20, 50);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+.d{
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    /* background-color: lawngreen; */
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    
+}

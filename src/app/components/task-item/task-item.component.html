@@ -5,8 +5,7 @@
     <!-- <h3>Meeting</h3>
     <p></p>
     <p></p> -->
-    
-    <h3 id='h3' >{{task.text }} 
+    <h3 [ngClass]="{'strike':task.reminder}" id='h3' >{{task.text }} 
         <fa-icon class="icon"
         (click)="onDelete(task)"
         [ngStyle]="{'color':'red'}" 

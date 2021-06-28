@@ -1,18 +1,23 @@
 .body{
-    background-color: black;
+     background-color: black; 
+     height: 100%;
 }
-.container{
-    max-width: 500px;
-    margin-bottom: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-image: url(''); */
-    background-color: aqua;
-    /* display: flex;
-    justify-content: space-between; */
+/* .container{
+     max-width: 500px; 
+     margin-bottom: 20px; 
+     background-position: center; 
+     background-repeat: no-repeat; 
+     background-image: url('');   
+     background-color: aqua; 
+     display: flex;
+    justify-content: space-between;  
     
-}
+} */
 .img{
-    background-position: center;
-    max-width: 500px;
+     background-position: center; 
+     max-width: 500px; 
+     height: 100%;
+}
+.b{
+    height: wrap-content;
 }

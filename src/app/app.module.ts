@@ -16,11 +16,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ImgComponent } from './componenets/img/img.component'
+import { ImgComponent } from './componenets/img/img.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './components/nav/nav.component'
 
 const appRoutes : Routes =[
   { path: '', component:TasksComponent},
   { path: 'about', component:AboutComponent},
+  { path: 'home', component:HomeComponent},
+  { path: 'taskscomponent', component:TasksComponent},
+  { path: '', component:TasksComponent},
+
+  
+  
 
 ]
 
@@ -35,7 +43,9 @@ const appRoutes : Routes =[
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
-    ImgComponent
+    ImgComponent,
+    HomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

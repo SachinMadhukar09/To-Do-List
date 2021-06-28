@@ -40,25 +40,25 @@
 <!-- 
 <form  *ngIf="showAddTask" 
         class="add-form" 
-        [formGroup]="newTask"
+        
         (ngSubmit)="onSubmit()"
         >
 <div 
     class="form-control">
 <label for="text">Task</label>
-<input id="text" type="text" formControlName="text" >
+<input id="text" type="text" [formControlName]="text" >
 </div>
 
 <div 
     class="form-control">
 <label for="day">Day</label>
-<input id="day" type="date" formControlName="day" >
+<input id="day" type="date" [formControlName]="day" >
 </div>
 
 <div 
     class="form-control">
 <label for="description">Description</label>
-<input id="description" type="text" formControlName="description" >
+<input id="description" type="text" [formControlName]="description" >
 </div>
 
 

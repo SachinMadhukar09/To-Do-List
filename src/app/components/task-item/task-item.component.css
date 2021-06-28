@@ -28,6 +28,8 @@
     align-items: center;
     justify-content: space-between; 
  }
- .icon{
-     
- }
+ 
+
+.strike{
+    text-decoration: line-through;
+}

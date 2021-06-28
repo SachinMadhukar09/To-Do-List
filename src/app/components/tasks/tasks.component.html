@@ -1,6 +1,7 @@
 
 <!-- In this i used directive by using NgFor for listing the items-->
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<h2>Task List</h2>
 <app-task-item 
     *ngFor="let task of tasks" 
     [task]="task" 
