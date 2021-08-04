@@ -4,14 +4,14 @@
       "id": 3,
       "text": "Complete the assignment",
       "day": "June 15th at 2:30pm",
-      "reminder": true,
+      "reminder": false,
       "description": "Training Assignment"
     },
     {
       "id": 4,
       "text": "Assignment Linkedin",
       "day": "June 18th at 8:00pm",
-      "reminder": true,
+      "reminder": false,
       "description": "Training Assignment"
     },
     {
@@ -19,14 +19,14 @@
       "day": "June 18th at 11:10pm",
       "description": "Intern Assignment",
       "id": 5,
-      "reminder": true
+      "reminder": false
     },
     {
       "text": "Complete Project",
       "day": "2021-06-27",
       "description": "Todo App With Angular",
       "id": 6,
-      "reminder": true
+      "reminder": false
     }
   ]
 }
